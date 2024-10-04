@@ -1,7 +1,7 @@
-# Your Name Here
+# Reuben Stoutenburg
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
+# 10/03/2024
+# Lab 04
 # Lab Section: 
 # Sources, people worked with, help given to: 
 # your
@@ -100,8 +100,27 @@ min_temps = [
 # Output the results of both calculations.
 
 
+sum_max_temps = 0
+sum_min_temps = 0
 
+for i in range(len(max_temps)):
+    sum_max_temps+=max_temps[i]
+    sum_min_temps+=min_temps[i]
+
+avg_max_temps=sum_max_temps/len(max_temps)
+avg_min_temps=sum_min_temps/len(min_temps)
+    
+print(avg_max_temps)
+print(avg_min_temps)
+    
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
+
+highest_temp = max(max_temps)
+print(highest_temp)
+
+lowest_temp = min(min_temps)
+print(lowest_temp)
+
 
 
